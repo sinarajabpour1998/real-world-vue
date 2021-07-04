@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1>Showing event number #1</h1>
+    <h1>Showing event number #{{ id }}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: "EventShow"
+  props: ["id"]
 }
 </script>
 
