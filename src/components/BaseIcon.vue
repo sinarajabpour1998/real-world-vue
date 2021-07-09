@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="icon-container">
     <span class="icon-wrapper" v-html="svg"></span>
-    <slot name="title"></slot>
+    <slot></slot>
   </div>
 </template>
 
@@ -21,7 +21,7 @@ export default {
   },
   computed: {
     svg() {
-      return feather.icons['users'].toSvg({
+      return feather.icons[this.name].toSvg({
         class: 'icon',
         width: this.width,
         height: this.height
@@ -32,6 +32,9 @@ export default {
 </script>
 
 <style scoped>
+.icon-container{
+  display: inline-flex;
+}
 .icon-wrapper {
   display: inline-flex;
   align-items: center;

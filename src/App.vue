@@ -240,6 +240,7 @@ select::ms-expand {
   opacity: 0;
 }
 </style>
+
 <script>
 import NavBar from "./components/NavBar";
 export default {
